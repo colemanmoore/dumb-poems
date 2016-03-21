@@ -1,7 +1,25 @@
 ---
 <start>: <A> % <B> % <A>
-<A>: <adj> <plural> <activeVerb> | <gerund> <articlePlural> <plural> <activeVerb>; <conjunction> <article> <singular> <activeVerb> | <conjunction> <article> <singular> <pastVerb> | <article> <adj> <singular> | <pastVerb> <articlePlural> <plural> <adj>, <adj> | <activeVerb> <adverb>, <article> <singular>, <gerund> | <article> <adj> <singular> <gerund> <adverb> | <conjunction> <plural> <activeVerb> <adverb> | <singular> <activeVerb> | <article> <singular> <pastVerb> | <articlePlural> <adj> <plural> <activeVerb> | <singular> <conjunction> <plural> <activeVerb> | <plural> <gerund> | <plural>, <plural>
-<B>: <gerund> <conjunction> <gerund>, <gerund> <article> <singular> | <singular> <pastVerb> <plural> <conjuction> <singular> <activeVerb>, <gerund> | <singular> <pastVerb> <conjunction> <plural> <adverb> <gerund> <conjunction <adj> <singular>
+<A>:
+- <adj> <plural> <activeVerb>
+- <gerund> <articlePlural> <plural> <activeVerb>; <conjunction> <article> <singular> <activeVerb>
+- <conjunction> <article> <singular> <pastVerb>
+- <article> <adj> <singular>
+- <pastVerb> <articlePlural> <plural> <adj>, <adj>
+- <activeVerb> <adverb>, <article> <singular>, <gerund>
+- <article> <adj> <singular> <gerund> <adverb>
+- <conjunction> <plural> <activeVerb> <adverb>
+- <singular> <activeVerb>
+- <article> <singular> <pastVerb>
+- <articlePlural> <adj> <plural> <activeVerb>
+- <singular> <conjunction> <plural> <activeVerb>
+- <plural> <gerund>
+- <plural>, <plural>
+<B>:
+- <gerund> <conjunction> <gerund>, <gerund> <article> <singular>
+- <singular> <pastVerb> <plural> <conjuction> <singular> <activeVerb>, <gerund>
+- <singular> <pastVerb> <conjunction> <plural> <adverb> <gerund> <conjunction <adj> <singular>
+
 <adj>: red | white | black | my | your | sun | clouds | blue | green | purple | empty | aluminum | ravaged | alabaster | candid | sensitive | major | foolish | bedeviled | exotic | undeniable | luscious | hoarse | unreal | real | peachy | succulent | light
 <singular>: mountain | skyline | city | faces | buddhist | temple | japan | ocean | field | rising | snowflake | leaf | rain | pool | wave | sea | sound | mind | smoke | suitor | bravery | yahoo | derelict | sympathy | sunset | ankle | tomorrow | donut | fur
 <plural>: sunrises | pheasant farms | people | samurai | fishing boats | kimonos | evenings | sad snow fall | chrysanthemums | cranes | fish | birds | misgivings | fortunes | coins | slivers | menaces | jokes | memories | mistakes | residents | stations | braces | pajamas | doors
