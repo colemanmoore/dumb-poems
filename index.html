@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Write a Poem</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/rita/dist/rita.min.js"></script>
+<script src="bower_components/yaml.js/dist/yaml.min.js"></script>
+<script>
+    var grammar, lines, poem;
+    function preload() {
+      grammar = new RiGrammar();
+      grammar.loadFrom('./grammar.yaml', generate);
+    }
+    function generate() {
+      poem = grammar.expand().split('%');
+      poem.forEach(function(line) {
+        $('#content').append('<div>'+line+'</div>');
+      });
+    }
+    function startOver() {
+      $('#content').empty();
+      generate();
+    }
+    function savePoem() {
+
+    }
+    window.onload = function() {
+      preload();
+    };
+  </script>
+  <div id="buttons" style="position: absolute; top: 10px">
+    <button id="game" onclick="startOver()">New poem</button>
+    <button id="boom" onclick="generate()">Write more</button>
+  </div>
+  <div id="content"></div>
+<html>

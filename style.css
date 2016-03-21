@@ -1,0 +1,32 @@
+#content {
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  margin: 1.7em 1em
+}
+
+#buttons {
+  position: absolute;
+  top: 10px;
+}
+
+#buttons button {
+  background-color: #e7e7e3;
+  transition: background-color .3s;
+  border: none;
+  border-radius: 9px;
+  padding: 7px 10px;
+  font-size: 15px;
+  outline: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#buttons button:hover {
+  background-color: #c9d5e7;
+  cursor: pointer;
+}
+
+#buttons button:active {
+  background-color: #cdcae7
+}
