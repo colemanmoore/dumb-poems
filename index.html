@@ -3,35 +3,13 @@
   <title>Write a Poem</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<script src="vendor/jquery-2.2.2.min.js"></script>
 <script src="vendor/rita.min.js"></script>
 <script src="vendor/yaml.min.js"></script>
-<script>
-    var grammar, lines, poem;
-
-    function preload() {
-      grammar = new RiGrammar();
-      grammar.loadFrom('./grammar.yaml', generate);
-    }
-
-    function generate() {
-      poem = grammar.expand().split('%');
-      poem.forEach(function(line) {
-        $('<div>'+line+'</div>').hide().appendTo('#content').fadeIn(500);
-      });
-    }
-
-    function startOver() {
-      $('#content').empty();
-      generate();
-    }
-
-    window.onload = preload;
-
-  </script>
-  <div id="buttons" style="position: absolute; top: 10px">
-    <button id="game" onclick="startOver()">New poem</button>
-    <button id="boom" onclick="generate()">Write more</button>
-  </div>
-  <div id="content"></div>
-<html>
+<script src="dumb-poems.js"></script>
+<div id="buttons" style="position: absolute; top: 10px">
+  <button id="game" onclick="startOver()">New poem</button>
+  <button id="boom" onclick="generate()">Write more</button>
+</div>
+<div id="content"></div>
+</html>
