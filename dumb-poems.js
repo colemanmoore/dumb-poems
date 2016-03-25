@@ -1,4 +1,4 @@
-var grammar, voice;
+var grammar, voice, VOICE_NAME = 'Junior';
 
 window.onload = function() {
   grammar = new RiGrammar();
@@ -9,8 +9,7 @@ function init() {
   window.speechSynthesis.onvoiceschanged = function() {
     var voices = window.speechSynthesis.getVoices();
     voices.forEach(function(v) {
-      console.log(v.name + ':' + v.lang);
-      if (v.name==='Junior') {
+      if (v.name===VOICE_NAME) {
         voice = v;
       }
     });
