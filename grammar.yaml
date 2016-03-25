@@ -7,7 +7,7 @@
 - <article> <adj> <singular>
 - <pastVerb> <articlePlural> <plural> <adj>, <adj>
 - <activeVerb> <adverb>, <article> <singular>, <gerund>
-- <article> <adj> <singular> <gerund> <adverb>
+- <possess> <singular> <gerund> <adverb>
 - <conjunction> <plural> <activeVerb> <adverb>
 - <singular> <activeVerb>
 - <article> <singular> <pastVerb>
@@ -18,9 +18,9 @@
 <B>:
 - <gerund> <conjunction> <gerund>, <gerund> <article> <singular>
 - <singular> <pastVerb> <plural> <conjuction> <singular> <activeVerb>, <gerund>
-- <singular> <pastVerb> <conjunction> <plural> <adverb> <gerund> <conjunction <adj> <singular>
+- <singular> <pastVerb> <conjunction> <plural> <adverb> <gerund>
 
-<adj>: red | white | black | my | your | sun | clouds | blue | green | purple | empty | aluminum | ravaged | alabaster | candid | sensitive | major | foolish | bedeviled | exotic | undeniable | luscious | hoarse | unreal | real | peachy | succulent | light
+<adj>: red | white | black | sun | clouds | blue | green | purple | empty | aluminum | ravaged | alabaster | candid | sensitive | major | foolish | bedeviled | exotic | undeniable | luscious | hoarse | unreal | real | peachy | succulent | light
 <singular>: mountain | skyline | city | faces | buddhist | temple | japan | ocean | field | rising | snowflake | leaf | rain | pool | wave | sea | sound | mind | smoke | suitor | bravery | yahoo | derelict | sympathy | sunset | ankle | tomorrow | donut | fur
 <plural>: sunrises | pheasant farms | people | samurai | fishing boats | kimonos | evenings | sad snow fall | chrysanthemums | cranes | fish | birds | misgivings | fortunes | coins | slivers | menaces | jokes | memories | mistakes | residents | stations | braces | pajamas | doors
 <activeVerb>: dawns | breaks | falls | rushes | gives | hates | spurns | controls | envelopes | consumes | resents | confuses | gives birth to | adores | yearns for | misses | regrets | abstains
@@ -30,3 +30,4 @@
 <adverb>: through | over | under | beside | next to | without | after | while | with | tomorrow
 <article>: the | this | that | a
 <articlePlural>: some | those | these
+<possess>: your | my | their | its | his | her

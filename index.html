@@ -8,26 +8,26 @@
 <script src="vendor/yaml.min.js"></script>
 <script>
     var grammar, lines, poem;
+
     function preload() {
       grammar = new RiGrammar();
       grammar.loadFrom('./grammar.yaml', generate);
     }
+
     function generate() {
       poem = grammar.expand().split('%');
       poem.forEach(function(line) {
-        $('#content').append('<div>'+line+'</div>');
+        $('<div>'+line+'</div>').hide().appendTo('#content').fadeIn(500);
       });
     }
+
     function startOver() {
       $('#content').empty();
       generate();
     }
-    function savePoem() {
 
-    }
-    window.onload = function() {
-      preload();
-    };
+    window.onload = preload;
+
   </script>
   <div id="buttons" style="position: absolute; top: 10px">
     <button id="game" onclick="startOver()">New poem</button>
